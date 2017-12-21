@@ -83,6 +83,18 @@ class DetailsViewController: UIViewController {
                             self.galleryScrollView.contentSize.width = self.galleryScrollView.frame.width * CGFloat(i + 1)
                             self.galleryScrollView.addSubview(imageView)
                         }
+                    } else {
+                        self.galleryPageControl.numberOfPages = 1
+
+                        let imageView = UIImageView()
+                        imageView.contentMode = .scaleAspectFit
+                        imageView.isUserInteractionEnabled = false
+                        imageView.image = UIImage(named: "placeholder")
+                        let xPosition = self.galleryScrollView.frame.width * CGFloat(0)
+                        imageView.frame = CGRect(x:xPosition,y:0,width: self.galleryScrollView.frame.width,height: self.galleryScrollView.frame.height)
+                        
+                        self.galleryScrollView.contentSize.width = self.galleryScrollView.frame.width * CGFloat(0 + 1)
+                        self.galleryScrollView.addSubview(imageView)
                     }
                 } else {
                     self.imageIV.image = UIImage(named: "placeholder")

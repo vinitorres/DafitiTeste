@@ -63,6 +63,11 @@ class CatalogViewController: UIViewController {
         self.loadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
+    
     func setLogoImage() {
         logoImageView.contentMode = .scaleAspectFit
         
@@ -100,6 +105,7 @@ class CatalogViewController: UIViewController {
                         if currentCount == self.movieList.returnMoviesCount() {
                             self.hasNext = false
                         }
+                        self.collectionView.reloadData()
                     }
                 }
             } else {
@@ -117,6 +123,7 @@ class CatalogViewController: UIViewController {
         hasNext = true
         numberOfItems = movieList.returnMoviesCount()
         currentPage = 1
+        self.collectionView.backgroundView = nil
         DispatchQueue.main.async {
             self.collectionView.reloadData()
         }
@@ -160,6 +167,7 @@ class CatalogViewController: UIViewController {
     
     @objc func refreshMovieList(_ sender: Any) {
         clearCollectionView()
+        searchBar.resignFirstResponder()
         self.loadData()
     }
     
@@ -219,8 +227,13 @@ class CatalogViewController: UIViewController {
         
         let currentCount = movieList.returnMoviesCount()
         
+        if currentCount == 0 {
+            self.activityIndicator.startAnimating()
+        }
+        
         movieList.searchMovie(searchFor: text, page: currentPage) { (result) in
             self.refreshControl.endRefreshing()
+            self.activityIndicator.stopAnimating()
             if result {
                 self.previousCallResult = result
                 DispatchQueue.main.async {
