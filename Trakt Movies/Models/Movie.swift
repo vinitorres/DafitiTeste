@@ -19,10 +19,8 @@ struct Movie {
     let overview: String
     let rating: Float
     let genres: [String]
-    let images: ImageMovie
    
     init(json: JSON) {
-        
         let ids:JSON = json["ids"]
         
         self.id = ids["tmdb"].stringValue
@@ -33,12 +31,32 @@ struct Movie {
         self.overview = json["overview"].stringValue
         self.rating = json["rating"].floatValue
         self.genres = json["genres"].arrayObject as? [String] ?? [""]
-        self.images = ImageMovie(movieId: id)
-
     }
     
     func displayGenres() -> String {
-        return genres.first!
+        return genres.joined(separator: ",")
+    }
+    
+    func formatedDateYear() -> String {
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd"
+        
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "yyyy"
+        
+        let date: Date? = dateFormatterGet.date(from: releaseDate)
+        return dateFormatterPrint.string(from: date!)
+    }
+    
+    func formatedDateRelease() -> String {
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd"
+        
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "dd, MMM, yyyy"
+        
+        let date: Date? = dateFormatterGet.date(from: releaseDate)
+        return dateFormatterPrint.string(from: date!)
     }
     
 }

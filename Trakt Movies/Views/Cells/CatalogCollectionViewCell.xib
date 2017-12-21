@@ -19,15 +19,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="391" height="314"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="zJq-7G-lNd">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="zJq-7G-lNd">
                         <rect key="frame" x="0.0" y="0.0" width="391" height="314"/>
                     </imageView>
                     <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vk6-cx-NY9">
                         <rect key="frame" x="0.0" y="256" width="391" height="58"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="391" id="Jyn-fc-VHa"/>
-                        </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jm2-rX-d20">
                         <rect key="frame" x="8" y="264" width="375" height="18"/>
@@ -63,7 +60,6 @@
             <viewLayoutGuide key="safeArea" id="1vA-jm-LXK"/>
             <size key="customSize" width="391" height="314"/>
             <connections>
-                <outlet property="backgroundInfoViewWidth" destination="Jyn-fc-VHa" id="aVw-rl-MLG"/>
                 <outlet property="imageIV" destination="zJq-7G-lNd" id="KmQ-7c-e7j"/>
                 <outlet property="nameLabel" destination="jm2-rX-d20" id="ZBx-ie-cId"/>
                 <outlet property="releaseDateLabel" destination="7xb-tq-cvW" id="Y6R-I4-WMt"/>

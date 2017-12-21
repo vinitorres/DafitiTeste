@@ -46,8 +46,27 @@ class MovieManager {
                 }
                 result = true
             }
+            onComplete(result)
+        }
+    }
+    
+    func searchMovie(searchFor: String, page: Int, onComplete: @escaping (_ success: Bool)->()) {
+        
+        Service.searchMovie(searchFor: searchFor, page: page) { (resultMovies) in
+            var result = false
             
+            guard let moviesDownloaded = resultMovies else {
+                print("Falha ao baixar os dados")
+                onComplete(result)
+                return
+            }
             
+            if moviesDownloaded.count > 0 {
+                for movie in moviesDownloaded {
+                    self.movies.append(movie)
+                }
+                result = true
+            }
             onComplete(result)
         }
     }

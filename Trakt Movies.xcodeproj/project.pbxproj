@@ -15,14 +15,13 @@
 		24C060C31FE9112800F5A79C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060C21FE9112800F5A79C /* Movie.swift */; };
 		24C060C51FE9116700F5A79C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060C41FE9116700F5A79C /* Service.swift */; };
 		24C060C81FE912B000F5A79C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060C71FE912B000F5A79C /* Constants.swift */; };
-		24C060CB1FE912F100F5A79C /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060CA1FE912F100F5A79C /* UIColor+hex.swift */; };
 		24C060CD1FE9158A00F5A79C /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060CC1FE9158A00F5A79C /* MovieManager.swift */; };
 		24C060D11FE96BA100F5A79C /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060D01FE96BA100F5A79C /* CatalogViewController.swift */; };
 		24C060D31FE96BB100F5A79C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060D21FE96BB100F5A79C /* DetailsViewController.swift */; };
 		24C060D51FE96BC700F5A79C /* CatalogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060D41FE96BC700F5A79C /* CatalogCollectionViewCell.swift */; };
 		24C060D71FE96BE500F5A79C /* CatalogCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C060D61FE96BE500F5A79C /* CatalogCollectionViewCell.xib */; };
 		24C060DA1FE9733E00F5A79C /* CatalogGridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060D91FE9733E00F5A79C /* CatalogGridFlowLayout.swift */; };
-		24C060DC1FE99C3800F5A79C /* ImageMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060DB1FE99C3800F5A79C /* ImageMovie.swift */; };
+		24C060ED1FEC183800F5A79C /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060EC1FEC183800F5A79C /* ImageZoomViewController.swift */; };
 		3ECFCBBCF63D89D14C5A11DC /* Pods_Trakt_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8730968BCAF280D62FC8DAFA /* Pods_Trakt_Movies.framework */; };
 		F379EA15CFF1EF7AECC374FA /* Pods_Trakt_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B485235D68730B9F283F0E9F /* Pods_Trakt_MoviesTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,14 +50,13 @@
 		24C060C21FE9112800F5A79C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		24C060C41FE9116700F5A79C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		24C060C71FE912B000F5A79C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		24C060CA1FE912F100F5A79C /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		24C060CC1FE9158A00F5A79C /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		24C060D01FE96BA100F5A79C /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		24C060D21FE96BB100F5A79C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		24C060D41FE96BC700F5A79C /* CatalogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewCell.swift; sourceTree = "<group>"; };
 		24C060D61FE96BE500F5A79C /* CatalogCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogCollectionViewCell.xib; sourceTree = "<group>"; };
 		24C060D91FE9733E00F5A79C /* CatalogGridFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogGridFlowLayout.swift; sourceTree = "<group>"; };
-		24C060DB1FE99C3800F5A79C /* ImageMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMovie.swift; sourceTree = "<group>"; };
+		24C060EC1FEC183800F5A79C /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		646488D7D62E061ECE44A4CB /* Pods-Trakt Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trakt Movies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trakt Movies/Pods-Trakt Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		8730968BCAF280D62FC8DAFA /* Pods_Trakt_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trakt_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEBF8C5AFEFDB77D9424B6C /* Pods-Trakt MoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trakt MoviesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trakt MoviesTests/Pods-Trakt MoviesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +116,7 @@
 		24C0609A1FE90A8B00F5A79C /* Trakt Movies */ = {
 			isa = PBXGroup;
 			children = (
+				24C060DF1FEA9EC900F5A79C /* CoreData */,
 				24C060C61FE9128B00F5A79C /* Utils */,
 				24C060C01FE90C3500F5A79C /* API */,
 				24C060BE1FE90BF400F5A79C /* Controllers */,
@@ -144,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				24C060C21FE9112800F5A79C /* Movie.swift */,
-				24C060DB1FE99C3800F5A79C /* ImageMovie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +169,7 @@
 		24C060BE1FE90BF400F5A79C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				24C060EB1FEC181700F5A79C /* CustomView */,
 				24C060C11FE90C3D00F5A79C /* Cells */,
 				24C060D01FE96BA100F5A79C /* CatalogViewController.swift */,
 				24C060D21FE96BB100F5A79C /* DetailsViewController.swift */,
@@ -205,18 +204,9 @@
 		24C060C61FE9128B00F5A79C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				24C060C91FE912D100F5A79C /* Extensions */,
 				24C060C71FE912B000F5A79C /* Constants.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		24C060C91FE912D100F5A79C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				24C060CA1FE912F100F5A79C /* UIColor+hex.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		24C060D81FE9731F00F5A79C /* CustomLayout */ = {
@@ -225,6 +215,21 @@
 				24C060D91FE9733E00F5A79C /* CatalogGridFlowLayout.swift */,
 			);
 			path = CustomLayout;
+			sourceTree = "<group>";
+		};
+		24C060DF1FEA9EC900F5A79C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		24C060EB1FEC181700F5A79C /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				24C060EC1FEC183800F5A79C /* ImageZoomViewController.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		A665100927CF8E988686492B /* Pods */ = {
@@ -460,11 +465,10 @@
 				24C060DA1FE9733E00F5A79C /* CatalogGridFlowLayout.swift in Sources */,
 				24C0609C1FE90A8B00F5A79C /* AppDelegate.swift in Sources */,
 				24C060D31FE96BB100F5A79C /* DetailsViewController.swift in Sources */,
-				24C060CB1FE912F100F5A79C /* UIColor+hex.swift in Sources */,
 				24C060C51FE9116700F5A79C /* Service.swift in Sources */,
+				24C060ED1FEC183800F5A79C /* ImageZoomViewController.swift in Sources */,
 				24C060CD1FE9158A00F5A79C /* MovieManager.swift in Sources */,
 				24C060C81FE912B000F5A79C /* Constants.swift in Sources */,
-				24C060DC1FE99C3800F5A79C /* ImageMovie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
