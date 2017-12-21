@@ -11,7 +11,6 @@
 		24C060A11FE90A8B00F5A79C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0609F1FE90A8B00F5A79C /* Main.storyboard */; };
 		24C060A31FE90A8B00F5A79C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C060A21FE90A8B00F5A79C /* Assets.xcassets */; };
 		24C060A61FE90A8B00F5A79C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C060A41FE90A8B00F5A79C /* LaunchScreen.storyboard */; };
-		24C060B11FE90A8B00F5A79C /* Trakt_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060B01FE90A8B00F5A79C /* Trakt_MoviesTests.swift */; };
 		24C060C31FE9112800F5A79C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060C21FE9112800F5A79C /* Movie.swift */; };
 		24C060C51FE9116700F5A79C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060C41FE9116700F5A79C /* Service.swift */; };
 		24C060C81FE912B000F5A79C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060C71FE912B000F5A79C /* Constants.swift */; };
@@ -23,18 +22,7 @@
 		24C060DA1FE9733E00F5A79C /* CatalogGridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060D91FE9733E00F5A79C /* CatalogGridFlowLayout.swift */; };
 		24C060ED1FEC183800F5A79C /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C060EC1FEC183800F5A79C /* ImageZoomViewController.swift */; };
 		3ECFCBBCF63D89D14C5A11DC /* Pods_Trakt_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8730968BCAF280D62FC8DAFA /* Pods_Trakt_Movies.framework */; };
-		F379EA15CFF1EF7AECC374FA /* Pods_Trakt_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B485235D68730B9F283F0E9F /* Pods_Trakt_MoviesTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		24C060AD1FE90A8B00F5A79C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24C060901FE90A8B00F5A79C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 24C060971FE90A8B00F5A79C;
-			remoteInfo = "Trakt Movies";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		11597DBF081E9ED1DED1A7CF /* Pods-Trakt MoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trakt MoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trakt MoviesTests/Pods-Trakt MoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,7 +32,6 @@
 		24C060A21FE90A8B00F5A79C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C060A51FE90A8B00F5A79C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24C060A71FE90A8B00F5A79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24C060AC1FE90A8B00F5A79C /* Trakt MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trakt MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C060B01FE90A8B00F5A79C /* Trakt_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trakt_MoviesTests.swift; sourceTree = "<group>"; };
 		24C060B21FE90A8B00F5A79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C060C21FE9112800F5A79C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -70,14 +57,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ECFCBBCF63D89D14C5A11DC /* Pods_Trakt_Movies.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24C060A91FE90A8B00F5A79C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F379EA15CFF1EF7AECC374FA /* Pods_Trakt_MoviesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				24C060981FE90A8B00F5A79C /* Trakt Movies.app */,
-				24C060AC1FE90A8B00F5A79C /* Trakt MoviesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +94,6 @@
 		24C0609A1FE90A8B00F5A79C /* Trakt Movies */ = {
 			isa = PBXGroup;
 			children = (
-				24C060DF1FEA9EC900F5A79C /* CoreData */,
 				24C060C61FE9128B00F5A79C /* Utils */,
 				24C060C01FE90C3500F5A79C /* API */,
 				24C060BE1FE90BF400F5A79C /* Controllers */,
@@ -217,13 +194,6 @@
 			path = CustomLayout;
 			sourceTree = "<group>";
 		};
-		24C060DF1FEA9EC900F5A79C /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
 		24C060EB1FEC181700F5A79C /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,27 +236,6 @@
 			productReference = 24C060981FE90A8B00F5A79C /* Trakt Movies.app */;
 			productType = "com.apple.product-type.application";
 		};
-		24C060AB1FE90A8B00F5A79C /* Trakt MoviesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24C060B81FE90A8B00F5A79C /* Build configuration list for PBXNativeTarget "Trakt MoviesTests" */;
-			buildPhases = (
-				D00A1762B85FFABDFC464C99 /* [CP] Check Pods Manifest.lock */,
-				24C060A81FE90A8B00F5A79C /* Sources */,
-				24C060A91FE90A8B00F5A79C /* Frameworks */,
-				24C060AA1FE90A8B00F5A79C /* Resources */,
-				8DE6F5E62CC2F6EE940FAFDF /* [CP] Embed Pods Frameworks */,
-				8BB633A0FC79D071EF13BCDE /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				24C060AE1FE90A8B00F5A79C /* PBXTargetDependency */,
-			);
-			name = "Trakt MoviesTests";
-			productName = "Trakt MoviesTests";
-			productReference = 24C060AC1FE90A8B00F5A79C /* Trakt MoviesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -300,11 +249,6 @@
 					24C060971FE90A8B00F5A79C = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					24C060AB1FE90A8B00F5A79C = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 24C060971FE90A8B00F5A79C;
 					};
 				};
 			};
@@ -322,7 +266,6 @@
 			projectRoot = "";
 			targets = (
 				24C060971FE90A8B00F5A79C /* Trakt Movies */,
-				24C060AB1FE90A8B00F5A79C /* Trakt MoviesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -336,13 +279,6 @@
 				24C060A61FE90A8B00F5A79C /* LaunchScreen.storyboard in Resources */,
 				24C060A31FE90A8B00F5A79C /* Assets.xcassets in Resources */,
 				24C060A11FE90A8B00F5A79C /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24C060AA1FE90A8B00F5A79C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,54 +340,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8BB633A0FC79D071EF13BCDE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trakt MoviesTests/Pods-Trakt MoviesTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8DE6F5E62CC2F6EE940FAFDF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trakt MoviesTests/Pods-Trakt MoviesTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D00A1762B85FFABDFC464C99 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Trakt MoviesTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -472,23 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24C060A81FE90A8B00F5A79C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24C060B11FE90A8B00F5A79C /* Trakt_MoviesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		24C060AE1FE90A8B00F5A79C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 24C060971FE90A8B00F5A79C /* Trakt Movies */;
-			targetProxy = 24C060AD1FE90A8B00F5A79C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		24C0609F1FE90A8B00F5A79C /* Main.storyboard */ = {
@@ -649,42 +521,6 @@
 			};
 			name = Release;
 		};
-		24C060B91FE90A8B00F5A79C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11597DBF081E9ED1DED1A7CF /* Pods-Trakt MoviesTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4W4CDBHWB5;
-				INFOPLIST_FILE = "Trakt MoviesTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.vini.torres.Trakt-MoviesTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trakt Movies.app/Trakt Movies";
-			};
-			name = Debug;
-		};
-		24C060BA1FE90A8B00F5A79C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAEBF8C5AFEFDB77D9424B6C /* Pods-Trakt MoviesTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4W4CDBHWB5;
-				INFOPLIST_FILE = "Trakt MoviesTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.vini.torres.Trakt-MoviesTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trakt Movies.app/Trakt Movies";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -702,15 +538,6 @@
 			buildConfigurations = (
 				24C060B61FE90A8B00F5A79C /* Debug */,
 				24C060B71FE90A8B00F5A79C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24C060B81FE90A8B00F5A79C /* Build configuration list for PBXNativeTarget "Trakt MoviesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24C060B91FE90A8B00F5A79C /* Debug */,
-				24C060BA1FE90A8B00F5A79C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

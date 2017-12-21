@@ -171,6 +171,9 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al0-XX-zyd">
                                                 <rect key="frame" x="95.5" y="525" width="259.5" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="4zL-6k-xlx"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -230,23 +233,23 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wS8-bj-cp2">
-                                        <rect key="frame" x="20" y="582.5" width="335" height="320"/>
+                                        <rect key="frame" x="20" y="582.5" width="335" height="280"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT1-G7-rek">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="320"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="280"/>
                                             </scrollView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="jT1-G7-rek" secondAttribute="trailing" id="0qD-k9-ySr"/>
                                             <constraint firstItem="jT1-G7-rek" firstAttribute="leading" secondItem="wS8-bj-cp2" secondAttribute="leading" id="Fzc-vC-rFt"/>
-                                            <constraint firstAttribute="height" constant="320" id="WdP-wQ-342"/>
+                                            <constraint firstAttribute="height" constant="280" id="WdP-wQ-342"/>
                                             <constraint firstItem="jT1-G7-rek" firstAttribute="top" secondItem="wS8-bj-cp2" secondAttribute="top" id="q8P-gX-xOe"/>
                                             <constraint firstAttribute="bottom" secondItem="jT1-G7-rek" secondAttribute="bottom" id="qnA-AG-0Kc"/>
                                         </constraints>
                                     </view>
                                     <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Bbb-4b-h59">
-                                        <rect key="frame" x="20" y="906.5" width="335" height="37"/>
+                                        <rect key="frame" x="20" y="862.5" width="335" height="37"/>
                                         <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="currentPageIndicatorTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
@@ -267,7 +270,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Bbb-4b-h59" secondAttribute="bottom" constant="16" id="me2-eN-zDR"/>
                                     <constraint firstItem="3Fw-j1-5t1" firstAttribute="top" secondItem="qUV-k1-Xze" secondAttribute="bottom" constant="4" id="rAz-Ev-91K"/>
                                     <constraint firstItem="gUj-wh-eJl" firstAttribute="leading" secondItem="nKG-H0-rro" secondAttribute="leading" id="tvP-69-bYy"/>
-                                    <constraint firstItem="Bbb-4b-h59" firstAttribute="top" secondItem="jT1-G7-rek" secondAttribute="bottom" constant="4" id="vlB-8J-GBu"/>
+                                    <constraint firstItem="Bbb-4b-h59" firstAttribute="top" secondItem="jT1-G7-rek" secondAttribute="bottom" id="vlB-8J-GBu"/>
                                     <constraint firstItem="wS8-bj-cp2" firstAttribute="top" secondItem="dS7-N7-Ajl" secondAttribute="bottom" constant="8" id="xZL-kU-tFZ"/>
                                     <constraint firstAttribute="trailing" secondItem="Bbb-4b-h59" secondAttribute="trailing" constant="20" id="z4L-Md-DsE"/>
                                 </constraints>

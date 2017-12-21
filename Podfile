@@ -10,9 +10,4 @@ target 'Trakt Movies' do
   pod 'Kingfisher', '~> 4.0'
   pod 'SwiftyJSON'
 
-  target 'Trakt MoviesTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

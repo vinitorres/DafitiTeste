@@ -30,11 +30,15 @@ struct Movie {
         self.tagline = json["tagline"].stringValue
         self.overview = json["overview"].stringValue
         self.rating = json["rating"].floatValue
-        self.genres = json["genres"].arrayObject as? [String] ?? [""]
+        self.genres = json["genres"].arrayObject as! [String]
     }
     
     func displayGenres() -> String {
-        return genres.joined(separator: ",")
+        if genres.count > 0 {
+            return genres.joined(separator: ",")
+        } else {
+            return "Not Available"
+        }
     }
     
     func formatedDateYear() -> String {
@@ -45,7 +49,13 @@ struct Movie {
         dateFormatterPrint.dateFormat = "yyyy"
         
         let date: Date? = dateFormatterGet.date(from: releaseDate)
-        return dateFormatterPrint.string(from: date!)
+        
+        if date != nil {
+            return dateFormatterPrint.string(from: date!)
+        } else {
+            return "Not Available"
+        }
+        
     }
     
     func formatedDateRelease() -> String {
@@ -56,7 +66,12 @@ struct Movie {
         dateFormatterPrint.dateFormat = "dd, MMM, yyyy"
         
         let date: Date? = dateFormatterGet.date(from: releaseDate)
-        return dateFormatterPrint.string(from: date!)
+        
+        if date != nil {
+            return dateFormatterPrint.string(from: date!)
+        } else {
+            return "Not Available"
+        }
     }
     
 }
