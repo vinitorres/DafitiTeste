@@ -32,8 +32,6 @@
 		24C060A21FE90A8B00F5A79C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C060A51FE90A8B00F5A79C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24C060A71FE90A8B00F5A79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24C060B01FE90A8B00F5A79C /* Trakt_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trakt_MoviesTests.swift; sourceTree = "<group>"; };
-		24C060B21FE90A8B00F5A79C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C060C21FE9112800F5A79C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		24C060C41FE9116700F5A79C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		24C060C71FE912B000F5A79C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				24C0609A1FE90A8B00F5A79C /* Trakt Movies */,
-				24C060AF1FE90A8B00F5A79C /* Trakt MoviesTests */,
 				24C060991FE90A8B00F5A79C /* Products */,
 				A665100927CF8E988686492B /* Pods */,
 				1E92A2A230D4B8B755637D30 /* Frameworks */,
@@ -105,15 +102,6 @@
 				24C060A71FE90A8B00F5A79C /* Info.plist */,
 			);
 			path = "Trakt Movies";
-			sourceTree = "<group>";
-		};
-		24C060AF1FE90A8B00F5A79C /* Trakt MoviesTests */ = {
-			isa = PBXGroup;
-			children = (
-				24C060B01FE90A8B00F5A79C /* Trakt_MoviesTests.swift */,
-				24C060B21FE90A8B00F5A79C /* Info.plist */,
-			);
-			path = "Trakt MoviesTests";
 			sourceTree = "<group>";
 		};
 		24C060BB1FE90BCC00F5A79C /* Models */ = {
